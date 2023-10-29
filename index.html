@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="User_Module">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <script src="../User panel/angular/angular.min.js"></script>
+    <script src="../User panel/angular/angularjs.js"></script>
+    <script src="../User panel/angular/route.js"></script>
+    <script src="../front-end/js/User.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<body class="Container" ng-controller="Register_ctr">
+
+  
+   <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light   mb-4" style="background-image: linear-gradient(rgb(202, 225, 117),rgb(125, 213, 144),rgb(165, 183, 165));">
+  
+  
+
+          
+        
+  
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-0 mt-lg-0" href="#">
+        <img
+          src="./image/ar-home-tech.png"
+          height="50px" style="font-size: px;"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 
+      ">
+        <li class="nav-item " >
+          <a class="nav-link text-dark" href="# " style="margin-left: 30px; ">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark"  href="#" style=" margin-left: 30px; font-weight:30px;">ABOUT US</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="margin-left: 30px;">
+            OUR SERVICES
+          </a>
+          <div class="dropdown-menu text-dark"  style="font-size : medium;" >
+             <a class="dropdown-item " href="#">Home/House plan design</a>
+            <a class="dropdown-item " href="#">Floor plans</a>
+            
+            <a class="dropdown-item " href="#">Architectural Drawings</a>
+        
+            <a class="dropdown-item " href="#">3D Elevation</a>
+            <a class="dropdown-item " href="#">3D Floor plan</a>
+            <a class="dropdown-item " href="#">3D walkthrough</a>
+            <a class="dropdown-item " href="#">Building Estimation</a>
+            <a class="dropdown-item" href="#">Interior Designing</a>
+        
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark"  href="#" style=" margin-left: 30px; font-weight:30px;">SMART BUILDER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark"  href="#" style=" margin-left: 30px; font-weight:30px;">PLAN SANCTION</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark"  href="#" style=" margin-left: 30px; font-weight:100px;">CONTACT</a>
+        </li>
+
+      </ul>
+      <a href="./inquiry.html" >
+        <button class="btn btn-primary btn-block  " >Inquiry Now</button>
+      </a>
+      <!-- Left links -->
+    </div>
+    
+      
+  <!-- Container wrapper -->
+</nav><br><br>
+<!-- Navbar -->
+
+<!----slider-->
+<section >
+
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" style="height: 40%;">
+		  <div class="carousel-item active" >
+			<img src="./image/a10.jpg" class="d-block w-100 " alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="./image/a9.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="./image/a12.jpeg" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+	   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</button>
+	  </div>
+
+</section>
+
+<section class="intro" >
+  <div class="container-fluid" style="background-color: rgb(219, 219, 219);">
+      <div class="row">
+          <div class="col-lg-12"><br>
+              <h2 class="subhead text-center" ><span class="building-color">AR-</span>HOMETECH - House Plan | 3D Elevations | Floor Plan | Architectural Drawings</h2><br>
+              <p class="text-center" style="margin-left: 50px ; margin-right: 50px; font-size: 20px;">We help you design your dream home easily, we provide customized <a href="">House Plan design</a>, Home Designs, building plans, residential building plans, commercial building plan, industrial building plan, single floor plan, Duplex house plan, <a href="">Architectural Drawings</a>, <a href="">Structural Drawings</a>, <a href="">3D Elevation</a>, <a href="">3D Floor Plan</a>, <a href="">3D Walkthrough</a> and much more making the expensive designing and complex process of design, simple and affordable. Our targeted house plan search allows you to quickly and easily find a floor plan that will meet your needs perfectly.</p><br><br>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="section service"><br><br>
+  <h2 class="subhead text-center">Our Process</h2><br>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+              <div class="service-icon" >
+                <img src="./image/c.jpeg" class="text-center" alt="" style="height: 90px; width: 90px; margin-left: 100px;" >
+              </div><br>
+              <div class="service-content " style="margin-right: 10px;" >
+                  <h4>Schedule a meeting with us</h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+              <div class="service-icon" >
+                <img src="./image/d.jpeg" class="text-center" alt="" style="height: 90px; width: 90px; margin-left: 100px;" >
+              </div><br>
+              <div class="service-content" style="margin-right: 10px;">
+                  <h4>Discuss your requirement</h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+              <div class="service-icon" >
+                <img src="./image/pp.jpeg" class="text-center" alt="" style="height: 90px; width: 90px; margin-left: 100px;" >
+              </div><br>
+              <div class="service-content" style="margin-right: 10px;">
+                  <h4>Plan Design & Sanction</h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+              <div class="service-icon" >
+                <img src="./image/co.jpeg" class="text-center" alt="" style="height: 90px; width: 90px; margin-left: 50px;" >
+              </div><br>
+              <div class="service-content" style="margin-right: 10px;">
+                  <h4>Start Construction</h4>
+              </div>
+          </div>
+      </div><!-- .row -->
+  </div><!-- .container -->
+</div>
+<br><br><br>
+
+<section class="container"  style="background-color: grey ;">
+  <div class="card-group">
+    <div class="card" style="margin: 20px;">
+      <img src="./image/a1.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="">  Home/design</p>
+      </div>
+    </div>
+    <div class="card"style="margin: 20px;">
+      <img src="./image/a8.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="card-text text-center">  Home/design</p>
+      </div>
+    </div>
+    <div class="card" style="margin: 20px;">
+      <img src="./image/a11.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="card-text text-center">  Home/design</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card" style="margin: 20px ; border: 40px;">
+      <img src="./image/a12.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="card-text text-center">  Home/design</p>
+      </div>
+    </div>
+    <div class="card"style="margin: 20px; height: 60px;">
+      <img src="./image/a15.jpeg" class="card-img-top" alt="..." height="54%">
+      <div class="card-body">
+        
+        <p class="card-text text-center">  Home/design</p>
+      </div>
+    </div>
+    <div class="card bg-dark" style="margin: 20px; height: 60px;">
+      <img src="./image/a7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="card-text text-center">  Home/design</p>
+      </div>
+    </div>
+  </div>
+</section><br><br><br>
+
+
+
+<section>
+  <footer>
+    <div class="container-fluid bg-warning" style="padding: 20px;">
+        <div class="row footer-widgets">
+            
+            
+            <!-- Start Subscribe & Social Links Widget -->
+            <div class="col-md-3 col-xs-12">
+                <div class="footer-widget mail-subscribe-widget">
+                    <h4>Request a Call back<span class="head-line"></span></h4>
+                   
+                    <form id="contact_form_footer" style="display: flex;" method="post" action="" name="contact_form_footer" OnSubmit="setTimeout('clear_form2()', 200); return true">
+                        <input type="hidden" name="product1" id="product1" value="BuildingPlanner Enquiry from footer">
+                      <div class="footer-phone-wrap">
+                        <input type="text" placeholder="Telephone" id="telephone1" name="telephone1">
+                        </div>
+                        <input type="submit" class="btn-system btn-gray" value="Call">
+                        
+                    </form>
+                    <div id="result1"></div>
+                </div><br>
+                <div class="footer-widget social-widget">
+                    <h4>Follow Us<span class="head-line"></span></h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div><!-- .col-md-3 -->
+            <!-- End Subscribe & Social Links Widget -->
+            
+            
+            <!-- Start Twitter Widget -->
+            <div class="col-md-3 col-xs-12">
+                <div class="footer-widget twitter-widget">
+                    <h4>Our Services<span class="head-line"></span></h4>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About us</a></li>
+                            <li><a href="building-plan-sanction.php">Plan Sanction</a></li>
+                            <li><a href="building-estimation.php">Estimation</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="terms-condition.php">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div><!-- .col-md-3 -->
+            <!-- End Twitter Widget -->
+
+
+            <!-- Start Flickr Widget -->
+            <div class="col-md-3 col-xs-12">
+                <div class="footer-widget twitter-widget">
+                    <h4>Our Services<span class="head-line"></span></h4>
+                    <ul style="list-style-type: none;">
+                      <li><a href="home-plan-design.php">Home/House plan design</a></li>
+                            <li><a href="floor-plans.php">Floor plans</a></li>
+                            <li><a href="structural-drawings.php">Structural Drawings</a></li>
+                            <li><a href="3d-elevation.php">3D Elevation</a></li>
+                            <li><a href="3d-floor-plan.php">3D Floor plan</a></li>
+                            <li><a href="interior-designing.php">Interior Designing</a></li>
+                    </ul>
+                </div>
+            </div><!-- .col-md-3 -->
+          
+            <!-- Start Contact Widget -->
+            <div class="col-md-3 col-xs-12">
+                <div class="footer-widget contact-widget">
+                    <h4><img src="images/footer-logo.png" class="img-responsive" alt="Build it" /></h4>
+                    <p>2nd main road, AECS layout, B Block, Singasandra, Bengaluru, Karnataka 560068</p>
+                    <p>#2363, 1st Floor, 24th Main, 1st Sector, HSR Layout, Bangalore - 560102</p>
+                    <ul class="text-start" style="list-style-type: none;">
+                        <li><span>Phone Number:</span> +91 9148016043</li>
+                        <li><span>Email:</span> info@buildingplanner.in</li>
+                       
+                    </ul>
+                </div>
+            </div><!-- .col-md-3 -->
+            
+        </div><!-- .row -->
+        <br><br>
+
+        <!-- Start Copyright -->
+        <div class="copyright-section text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; Trumbaya Building Planner India Pvt Ltd -  All Rights Reserved </p>
+                </div><!-- .col-md-6 -->
+               
+            </div><!-- .row -->
+        </div>
+        <!-- End Copyright -->
+
+    </div>
+</footer>
+</section>
+
+</body>
